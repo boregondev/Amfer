@@ -134,7 +134,7 @@ local mobile_button_ui = Instance.new('ImageButton')
 local mobile_hidden_gui = Instance.new('ScreenGui')
 
 mobile_hidden_gui.Enabled = cloneref(game:GetService('UserInputService')).TouchEnabled
-mobile_hidden_gui.Parent = cloneref(game:GetService('Players')).LocalPlayer.PlayerGui
+mobile_hidden_gui.Parent = cloneref(game:GetService('CoreGui')) or gethui()
 mobile_hidden_gui.ResetOnSpawn = false
 
 mobile_button_ui.Position = UDim2.new(0, 50, 0, 50)
